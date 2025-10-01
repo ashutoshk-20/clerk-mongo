@@ -21,7 +21,6 @@ export async function POST(req) {
         console.log('User deleted');
     }
 
-    
     return new Response('Webhook received', { status: 200 })
   } catch (err) {
     console.error('Error verifying webhook:', err)
